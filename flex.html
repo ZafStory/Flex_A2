@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div.big_background {
+      background-color: rgba(137, 223, 206, 0.767);
+      background-image: url(https://images.unsplash.com/photo-1682687980961-78fa83781450?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 5px;
+      background-blend-mode: lighten;
+    }
+
+    .examplerow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sampleimg {
+      border: 1px solid;
+      min-height: 50px;
+      padding: 5px;
+      width: 300px;
+      height: 500px;
+      background-size: cover;
+      background-image: url(https://images.unsplash.com/photo-1526781100743-007e0dc2b474?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    .side {
+      flex: 30%;
+      background-color: #f1f1f1;
+      padding: 20px;
+    }
+
+    .left {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+      background-size: cover;
+      width: 300px;
+      height: 500px;
+      background-image: url(https://images.unsplash.com/photo-1509515837298-2c67a3933321?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    .samplemain {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+      justify-content: flex-end;
+    }
+
+    .box {
+      border: 1px solid;
+      min-height: 50px;
+      padding: 10px;
+    }
+
+    .box1 {
+      border: 1px solid;
+      min-height: 50px;
+      padding: 5px;
+      width: 300px;
+      height: 500px;
+      background-size: cover;
+      background-image: url(https://images.unsplash.com/photo-1598920710727-e6c74781538c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    .box2 {
+      border: 1px solid;
+      min-height: 50px;
+      padding: 5px;
+      width: 300px;
+      height: 500px;
+      background-size: cover;
+      background-image: url(https://images.unsplash.com/photo-1622200337081-bf0ffb3fa4cb?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      padding: 15px;
+      margin: 5px;
+      position: center;
+    }
+
+    .header {
+      padding: 60px;
+      text-align: center;
+      font-size: 30px;
+      background-image: url(https://images.unsplash.com/photo-1618108571494-7065bc619e68?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+
+    .footer {
+      padding: 60px;
+      text-align: center;
+      font-size: 30px;
+      background-image: url(https://images.unsplash.com/photo-1560238786-aa5717f6ba63?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    }
+  </style>
+
+  <body>
+    <div class="header">
+      <h1>Tugasan</h1>
+      <p>With a <b>Flower</b> Quotes</p>
+    </div>
+
+    <div class="big_background">
+      <div
+        class="box"
+        style="
+          border-color: black;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 20px;
+        "
+      >
+        <div
+          class="box"
+          style="
+            border-color: coral;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+          "
+        >
+          Parent1
+          <div>
+            <div class="examplerow">
+              <div class="side" style="border-color: green">
+                <h2>About Flowers</h2>
+                <h3>
+                  Flowers whisper “Beauty!” to the world, even as they fade, wilt, fall.
+                </h3>
+                <div class="sampleimg" style="height: 200px"></div>
+              </div>
+            </div>
+
+            <div class="samplemain">
+              <h2></h2>
+              <h5>In the star</h5>
+              <div class="left" style="height: 200px">Night</div>
+            </div>
+          </div>
+
+          <div
+            class="box"
+            style="
+              border-color: green;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              gap: 16px;
+              justify-content: center;
+            "
+          >
+            <div class="box1" style="border-color: purple">Sunflower</div>
+            <div class="box2" style="border-color: purple">Sakura</div>
+          </div>
+
+          <div class="footer" style="border-color: blue">Thank you for visiting</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
